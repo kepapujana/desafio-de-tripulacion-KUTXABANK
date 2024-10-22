@@ -1,0 +1,36 @@
+.settings-item {
+  margin: 10px 0;
+}
+
+.settings-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.authorization-history {
+  list-style-type: none;
+  padding: 0;
+}
+
+.authorization-history li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.authorization-history li span {
+  margin-left: 10px;
+}
+
+.save-settings {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.save-settings:hover {
+  background-color: #45a049;
+}

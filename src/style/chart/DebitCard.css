@@ -1,0 +1,152 @@
+.debit-card {
+  background-color: #F4F5F6;
+  border-radius: 15px;
+  box-shadow: 15px 9px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  font-family: 'Arial', sans-serif;
+  margin: 16px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ant {
+  position: absolute;
+  top: 99px; /* Отрегулируйте по необходимости */
+  right: 0;
+  width: 55px;
+  animation: moveAntReverse 25s linear infinite;
+  z-index: 20;
+}
+
+@keyframes moveAntReverse {
+  0% {
+    right: -10px;
+  }
+  100% {
+    right: 90%;
+  }
+}
+
+.card-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #3d3c3c;
+  text-transform: uppercase;
+}
+
+.bank-card {
+  background-color: #ae8618;
+  color: #080808;
+  border-radius: 10px;
+  padding: 70px; 
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+
+}
+
+.bank-card:hover {
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-logo {
+  width: 120px; 
+  height: auto;
+  position: absolute;
+  top: 58px; 
+  right: 15px; /* Отступ от правого края */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-item {
+  display: flex;
+  justify-content: space-between; /* Равномерное распределение элементов */
+  align-items: center; /* Центрирование по вертикали */
+  margin-bottom: 10px; /* Уменьшенный отступ между элементами */
+  font-size: 24px; /* Уменьшенный размер шрифта для улучшения восприятия */
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.balance-info {
+  font-size: 42px; /* Размер шрифта для баланса */
+  font-weight: bold;
+  text-align: center;
+  color: #f5f9fa;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.5);
+  margin: 20px 0; /* Отступы для хорошего размещения */
+}
+
+.card-details {
+  display: flex; /* Используем Flexbox для равномерного распределения элементов */
+  justify-content: space-between; /* Равномерное распределение */
+  margin-top: 30px; /* Отступ сверху для разделения с другими элементами */
+}
+
+.savings-info {
+  margin: 25px 0;
+  padding: 20px 15px;
+  background-color: #eef5f7;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.savings-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.savings-progress-bar .progress {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+.spending-warning {
+  background-color: #fbe3e3;
+  color: #a33;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 5px solid #d9534f;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spending-warning h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .debit-card {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .bank-card {
+    padding: 20px;
+  }
+
+  .card-logo {
+    width: 100px;
+    top: 10px; /* Поднятый логотип на мобильных */
+  }
+
+  .card-item {
+    font-size: 22px; /* Уменьшенный размер шрифта для мобильных */
+  }
+
+  .balance-info {
+    font-size: 28px; /* Уменьшенный размер шрифта для мобильных */
+  }
+
+  .card-details {
+    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
+    align-items: center; /* Центрирование элементов */
+  }
+}

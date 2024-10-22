@@ -1,0 +1,92 @@
+/* Header.css */
+.navbar {
+    background-color: #fdfbfb; 
+    color: #000000; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease;
+    width: 100vw; 
+    height: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-brand img {
+    height: 60px; 
+}
+
+.form-control {
+    width: auto; 
+    min-width: 150px; 
+}
+
+.btn-outline-success {
+    margin-left: 5px; 
+}
+
+.navbar-nav {
+    display: flex; 
+    margin: 0; 
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 15px; 
+}
+
+.nav-link {
+    color: #000000; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #007A87; 
+}
+
+
+/* Скрыть меню и поле поиска на мобильных устройствах */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Скрыть меню на мобильных устройствах */
+    }
+
+    .form-control {
+        display: none; /* Скрыть поле поиска на мобильных устройствах */
+    }
+
+    .navbar {
+        background-color: #000000; 
+    }
+
+    .navbar-brand img {
+        filter: brightness(0) invert(1); 
+    }
+
+    .nav-link {
+        color: #ffffff; 
+        padding: 10px 0;
+    }
+
+    .nav-link:hover {
+        color: #007A87; 
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-toggler {
+        display: none; /* Скрыть кнопку-бургер на больших экранах */
+    }
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+    display: flex; 
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%; 
+}
