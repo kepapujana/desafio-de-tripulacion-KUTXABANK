@@ -1,14 +1,13 @@
 // src/App.jsx
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/header/Header'; 
+import Header from './components/header/Header';
 import Home from './routes/Home';
+import Subscriptions from './routes/Subscriptions';
 import Profile from './routes/Profile';
 import Nav from './components/header/Nav';
-import Login from './routes/Login'
-import Menu from '../src/Menu/Menu'
-
-
+import Login from './routes/Login';
+import Menu from '../src/Menu/Menu';
 
 function App() {
   const [language, setLanguage] = useState('EN');
@@ -19,16 +18,17 @@ function App() {
 
   return (
     <BrowserRouter>
-        <Header language={language} onLanguageChange={handleLanguageChange} />
-        <Routes>
-        <Route path="/home" element={<Home />} />
+      <Header language={language} onLanguageChange={handleLanguageChange} />
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/perfil" element={<Profile />} />
+        <Route path="/subscriptions" element={<Subscriptions />} />
+        <Route path="/perfile" element={<Profile />} />
       </Routes>
-      <Nav /> 
+      <Nav />
     </BrowserRouter>
   );
 }
 
-export default App;  
+export default App;
