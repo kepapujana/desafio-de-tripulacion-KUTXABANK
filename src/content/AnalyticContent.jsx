@@ -63,7 +63,7 @@ const AnalyticContent = () => {
                 <li>Ropa: 5% del ingreso mensual</li>
                 <li>Gastos Variados: 5% del ingreso mensual</li>
                 <li>Comidas Fuera: 10% del ingreso mensual</li>
-                <li>Osio: 5% del ingreso mensual</li>
+                <li>Ocio: 5% del ingreso mensual</li>
             </ul>
             <h3>Descripción de Gastos de Riesgo</h3>
             <ul className="risk-description-list">
