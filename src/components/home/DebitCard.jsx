@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import '../../style/chart/DebitCard.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faPencilAlt } from '@fortawesome/free-solid-svg-icons'; 
+import '../../style/chart/DebitCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import bankLogo from '../../assets/logo-Kutxabank.svg';
 import antImage from '/src/assets/hormiga.png';
 
@@ -9,19 +9,19 @@ const DebitCard = () => {
   const [cardData, setCardData] = useState(null);
   const [newSavingAmount, setNewSavingAmount] = useState('');
   const [isEditing, setIsEditing] = useState(false);
-  
+
   // История пополнений
   const [savingsHistory, setSavingsHistory] = useState([]);
 
   useEffect(() => {
     // Загрузка данных карты
     const fakeCardData = {
-      cardNumber: '1234 5678 9012 3456',
-      cardHolder: 'Juan Pérez',
-      balance: '€450',
+      cardNumber: '1234 5678 9012 3456         ',
+      cardHolder: 'Irati Murua Arriaga',
+      balance: '€54000',
       savingsGoal: '€1000',
-      currentSavings: '€450',
-      progress: '45%',
+      currentSavings: '€54000',
+      progress: '80%',
     };
     setCardData(fakeCardData);
   }, []);
@@ -34,7 +34,7 @@ const DebitCard = () => {
         amount: `+€${newSavingAmount}`,
         date: new Date().toLocaleString('es-ES'), // Дата и время на испанском
       };
-      
+
       // Обновляем историю пополнений
       setSavingsHistory([...savingsHistory, newEntry]);
 
@@ -60,8 +60,12 @@ const DebitCard = () => {
         <div className="bank-card">
           <img src={bankLogo} alt="Logo del banco" className="card-logo" />
           <div className="bank-card-info">
-            <span><strong>{cardData.cardNumber}</strong></span>
-            <span><strong>{cardData.cardHolder}</strong></span>
+            <span>
+              <strong>{cardData.cardNumber}</strong>
+            </span>
+            <span>
+              <strong>{cardData.cardHolder}</strong>
+            </span>
           </div>
           <div className="balance-info">
             <span className="balance-amount">{cardData.balance}</span>
@@ -80,7 +84,10 @@ const DebitCard = () => {
           <p>Ahorros Actuales: {cardData.currentSavings}</p>
           <p>Progreso: {cardData.progress}</p>
           <div className="savings-progress-bar">
-            <div className="progress" style={{ width: cardData.progress }}></div>
+            <div
+              className="progress"
+              style={{ width: cardData.progress }}
+            ></div>
           </div>
         </div>
 
@@ -98,8 +105,10 @@ const DebitCard = () => {
         <div className="savings-history">
           <h4>Historia de Ahorros</h4>
           <ul>
-            {savingsHistory.map(entry => (
-              <li key={entry.id}>{entry.date}: {entry.amount}</li>
+            {savingsHistory.map((entry) => (
+              <li key={entry.id}>
+                {entry.date}: {entry.amount}
+              </li>
             ))}
           </ul>
         </div>
