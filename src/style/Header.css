@@ -6,11 +6,14 @@
     transition: background-color 0.3s ease;
     width: 100vw; 
     height: auto; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 6rem;
 }
 
 .navbar-brand img {
-    height: 60px; 
+    width: 5rem;
+    margin: 0;
 }
 
 .form-control {
@@ -75,18 +78,4 @@
     .navbar-toggler {
         display: none; /* Скрыть кнопку-бургер на больших экранах */
     }
-}
-
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
-    display: flex; 
-    flex-wrap: nowrap; 
-    align-items: center;
-    justify-content: space-between; 
-    width: 100%; 
 }
