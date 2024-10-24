@@ -59,15 +59,15 @@ const SettingsContent = () => {
             <ul className="authorization-history">
                 <li>
                     <FontAwesomeIcon icon={faMobileAlt} />
-                    <span>Juan se autorizó con un móvil - 2024-10-20</span>
+                    <span>Irati Murua Arriaga se autorizó con un móvil - 2024-10-20</span>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faTabletAlt} />
-                    <span>Juan se autorizó con una tablet - 2024-10-18</span>
+                    <span>Irati Murua Arriaga se autorizó con una tablet - 2024-10-18</span>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faDesktop} />
-                    <span>Juan se autorizó con un escritorio - 2024-10-15</span>
+                    <span>Irati Murua Arriagan se autorizó con un escritorio - 2024-10-15</span>
                 </li>
             </ul>
 

@@ -55,3 +55,8 @@
 p{
     color: black;
 }
+
+.container-subs {
+    margin: 0 auto;
+    width: 90%;
+}

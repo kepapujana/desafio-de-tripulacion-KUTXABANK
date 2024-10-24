@@ -54,17 +54,16 @@ const DebitCard = () => {
 
   return (
     <div className="debit-card">
-      <img src={antImage} alt="Hormiga" className="ant" />
       <div className="card-header">Perfil Financiero</div>
       <div className="card-body">
         <div className="bank-card">
           <img src={bankLogo} alt="Logo del banco" className="card-logo" />
           <div className="bank-card-info">
             <span>
-              <strong>{cardData.cardNumber}</strong>
+              <strong>{cardData.cardHolder}</strong>
             </span>
             <span>
-              <strong>{cardData.cardHolder}</strong>
+              <strong>{cardData.cardNumber}</strong>
             </span>
           </div>
           <div className="balance-info">

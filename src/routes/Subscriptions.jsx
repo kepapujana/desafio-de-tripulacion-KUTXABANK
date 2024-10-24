@@ -37,7 +37,7 @@ const Subscriptions = () => {
   };
 
   return (
-    <>
+    <main className="container-subs">
       <div className="titleContainer">
         <LeftOutlined className="icons" />
         <p className="title">Control de Subscripciones</p>
@@ -87,7 +87,7 @@ const Subscriptions = () => {
         tu ahorro anual estimado. Esta herramienta te permitirá optimizar tus
         gastos y ahorrar dinero al eliminar suscripciones innecesarias.
       </p>
-    </>
+    </main>
   );
 };
 
