@@ -19,11 +19,11 @@ export default function Nav() {
 
       <Link className={style.link} to="/subscriptions">
         <img className={style.img} src={subscriptions} alt="piggy-bank" />
-        Subscripc
+        Suscripción
       </Link>
       <Link className={style.link} to="/perfile">
         <img className={style.img} src="/profile.svg" alt="piggy-bank" />
-        Profile
+        Perfil
       </Link>
     </nav>
   );
