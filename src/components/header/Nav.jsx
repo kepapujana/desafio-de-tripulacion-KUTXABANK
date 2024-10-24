@@ -8,55 +8,23 @@ export default function Nav() {
   return (
     <nav className={style.menu}>
       <Link className={style.link} to="/">
-        <div className={style.menu_item}>
-          <picture>
-            <img src="/icon-home.svg" alt="piggy-bank" />
-          </picture>
-          <p>Home</p>
-        </div>
+        <img className={style.img} src="/icon-home.svg" alt="piggy-bank" />
+        Home
       </Link>
 
       <Link className={style.link} to="/Menu">
-        <div className={style.menu_item}>
-          <picture>
-            <img src="/piggy-bank-svgrepo-com.svg" alt="piggy-bank" />
-          </picture>
-          <p>Hucha</p>
-        </div>
+        <img className={style.img} src="/piggy-bank-svgrepo-com.svg" alt="piggy-bank" />
+        Hucha
       </Link>
 
       <Link className={style.link} to="/subscriptions">
-        <div className={style.menu_item}>
-          <picture>
-            <img src={subscriptions} alt="piggy-bank" />
-          </picture>
-          <p>Subscripc.</p>
-        </div>
+        <img className={style.img} src={subscriptions} alt="piggy-bank" />
+        Subscripc
       </Link>
-
-      {user ? (
-        <>
-          <Link className={style.link} to="/perfile">
-            <div className={style.menu_item}>
-              <picture>
-                <img src="/profile.svg" alt="piggy-bank" />
-              </picture>
-              <p>Profile</p>
-            </div>
-          </Link>
-        </>
-      ) : (
-        <>
-          <Link className={style.link} to="/login">
-            <div className={style.menu_item}>
-              <picture>
-                <img src="/profile.svg" alt="piggy-bank" />
-              </picture>
-              <p>Profile</p>
-            </div>
-          </Link>
-        </>
-      )}
+      <Link className={style.link} to="/perfile">
+        <img className={style.img} src="/profile.svg" alt="piggy-bank" />
+        Profile
+      </Link>
     </nav>
   );
 }
