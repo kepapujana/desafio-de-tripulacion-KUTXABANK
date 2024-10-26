@@ -1,0 +1,101 @@
+/* AnalyticContent.css */
+
+.analytic-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #d32f2f; /* Ярко-красный цвет для заголовка */
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.expense-list,
+.risk-description-list {
+    margin: 10px 0; /* Уменьшенные отступы */
+    list-style: none; /* Убираем стандартные маркеры */
+    padding-left: 0; /* Убираем отступ слева */
+}
+
+.expense-list li,
+.risk-description-list li {
+    padding: 4px; /* Уменьшенные отступы для элементов списка */
+    color: #333; /* Цвет текста */
+    margin-bottom: 3px; /* Уменьшенный отступ между элементами списка */
+}
+
+/* Удалим фон и границы для списков */
+.expense-list li,
+.risk-description-list li {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границы */
+}
+
+.alert-box {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffebee; /* Светло-красный фон для предупреждения */
+    color: #b71c1c;
+    border-radius: 4px; /* Закругленные углы */
+    margin-top: 15px;
+}
+
+.alert-icon {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.alert-content p {
+    margin: 0; /* Убрать отступы у параграфа */
+}
+
+img {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .analytic-content {
+        padding: 10px; /* Уменьшение отступов на мобильных */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .alert-box {
+        font-size: 14px;
+        padding: 6px; /* Уменьшение отступов */
+    }
+
+    .alert-icon {
+        font-size: 20px;
+    }
+
+    .expense-list li,
+    .risk-description-list li {
+        font-size: 14px;
+        padding: 4px; /* Уменьшение отступов для элементов списка */
+        margin-bottom: 2px; /* Уменьшение отступа между элементами списка */
+    }
+}
+
