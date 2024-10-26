@@ -54,8 +54,6 @@ const AnalyticContent = () => {
   return (
     <div className="analytic-content">
       <h2>Analítica de Gastos por Categoría</h2>
-      <img src="/diagrama1.jpeg" alt="" />
-      <img src="/diagrama2.jpeg" alt="" />
       <Bar data={data} options={options} />
       <h3>Gastos Mensuales Típicos</h3>
       <ul className="expense-list">
