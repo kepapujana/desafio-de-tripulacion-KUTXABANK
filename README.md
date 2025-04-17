@@ -44,8 +44,4 @@ npm run dev
 
 ## Soporte
 
-Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https://github.com/kepapujana/2-Frontend-Ecommerce/issues).
-
-## Roadmap
-
-Seguiremos implementando mejoras en lo que va de curso para optimizar el proceso y sacar mas provecho de las herramientas
+Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https://github.com/kepapujana/desafio-de-tripulacion-KUTXABANK/issues).
