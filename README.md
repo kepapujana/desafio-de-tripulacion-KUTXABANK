@@ -33,8 +33,15 @@ npm run dev
 ```
 
 ### Credenciales 📝
-email: test@example.com
-contraseña: 123456
+```bash
+# email
+test@example.com
+```
+
+```bash
+# email
+123456
+```
 
 ## Construido Con 🛠️
 
