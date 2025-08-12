@@ -32,6 +32,10 @@ npm install
 npm run dev
 ```
 
+### Credenciales 📝
+email: test@example.com
+contraseña: 123456
+
 ## Construido Con 🛠️
 
 - [ MySQL](https://www.mysql.com/)
