@@ -55,7 +55,7 @@ const AnalyticContent = () => {
     <div className="analytic-content">
       <h2>Analítica de Gastos por Categoría</h2>
       <Bar data={data} options={options} />
-      <h3>Gastos Mensuales Típicos</h3>
+      <h4>Gastos Mensuales Típicos</h4>
       <ul className="expense-list">
         <li>Transporte: 10% del ingreso mensual</li>
         <li>Alquiler: 30% del ingreso mensual</li>
@@ -65,7 +65,7 @@ const AnalyticContent = () => {
         <li>Comidas Fuera: 10% del ingreso mensual</li>
         <li>Ocio: 5% del ingreso mensual</li>
       </ul>
-      <h3>Descripción de Gastos de Riesgo</h3>
+      <h4>Descripción de Gastos de Riesgo</h4>
       <ul className="risk-description-list">
         <li>
           Transporte: Gastos inesperados, como taxis o transporte público.

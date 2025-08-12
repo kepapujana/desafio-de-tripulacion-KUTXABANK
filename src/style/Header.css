@@ -46,21 +46,24 @@
 }
 
 
-/* Скрыть меню и поле поиска на мобильных устройствах */
 @media (max-width: 768px) {
     .navbar-nav {
-        display: none; /* Скрыть меню на мобильных устройствах */
-    }
+        display: none; 
+     }
 
     .form-control {
-        display: none; /* Скрыть поле поиска на мобильных устройствах */
+        display: none;
     }
 
     .navbar {
         background-color: #000000; 
+        border-radius: 22px;
+        height: 142px;
+        top: -22px
     }
 
     .navbar-brand img {
+        margin-top: 22px;
         filter: brightness(0) invert(1); 
     }
 
@@ -76,6 +79,6 @@
 
 @media (min-width: 769px) {
     .navbar-toggler {
-        display: none; /* Скрыть кнопку-бургер на больших экранах */
+        display: none; 
     }
 }

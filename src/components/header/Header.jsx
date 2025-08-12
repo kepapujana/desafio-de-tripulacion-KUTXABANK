@@ -39,12 +39,12 @@ const Header = () => {
 		const handleResize = () => {
 			setLogoSrc(window.innerWidth <= 768 ? logoMobile : logoDesktop);
 			if (window.innerWidth > 768) {
-				setIsOpen(false); // Закрываем меню при переключении на десктоп
+				setIsOpen(false); 
 			}
 		};
 
 		window.addEventListener('resize', handleResize);
-		handleResize(); // Инициализация состояния при первом рендере
+		handleResize(); 
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
@@ -69,6 +69,7 @@ const Header = () => {
 						<button> Login </button>
 					</Link>
 				)}
+				
 				
                 {/* <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
 					<ul className="navbar-nav d-flex flex-row me-auto">

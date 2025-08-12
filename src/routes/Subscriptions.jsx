@@ -39,12 +39,9 @@ const Subscriptions = () => {
   return (
     <main className="container-subs">
       <div className="titleContainer">
-        <LeftOutlined className="icons" />
         <p className="title">Control de Subscripciones</p>
-        <SettingOutlined />
       </div>
 
-      <h1 className="titleBody">Control de Subscripciones</h1>
       <h2 className="subtitleBody">Gestiona y optimiza tus subscripciones</h2>
       <Card className="card">
         <div className="cardContent">

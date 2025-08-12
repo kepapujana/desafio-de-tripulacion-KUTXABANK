@@ -16,19 +16,12 @@ const SavingsMenu = () => {
             <div className="menu-tabs">
                 <div className={`menu-tab ${activeTab === 'analytics' ? 'active' : ''}`} onClick={() => setActiveTab('analytics')}>
                     <FontAwesomeIcon icon={faChartBar} />
-                    <span>Analítica</span>
                 </div>
                 <div className={`menu-tab ${activeTab === 'savings' ? 'active' : ''}`} onClick={() => setActiveTab('savings')}>
                     <FontAwesomeIcon icon={faPiggyBank} />
-                    <span>Huchas</span>
                 </div>
                 <div className={`menu-tab ${activeTab === 'history' ? 'active' : ''}`} onClick={() => setActiveTab('history')}>
                     <FontAwesomeIcon icon={faHistory} />
-                    <span>Historia</span>
-                </div>
-                <div className={`menu-tab ${activeTab === 'settings' ? 'active' : ''}`} onClick={() => setActiveTab('settings')}>
-                    <FontAwesomeIcon icon={faCog} />
-                    <span>Ajustes</span>
                 </div>
             </div>
 

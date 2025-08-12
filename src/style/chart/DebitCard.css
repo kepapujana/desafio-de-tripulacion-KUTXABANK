@@ -11,7 +11,7 @@
 
 .ant {
   position: absolute;
-  top: 99px; /* Отрегулируйте по необходимости */
+  top: 99px; 
   right: 0;
   width: 55px;
   animation: moveAntReverse 25s linear infinite;
@@ -28,21 +28,19 @@
 }
 
 .card-header {
-  text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+      padding: 0 20px;
+
   color: #3d3c3c;
   text-transform: uppercase;
 }
 
 .bank-card {
-  height: 12rem;
-  background-color: #ae8618;
   color: #080808;
   border-radius: 10px;
   position: relative;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -60,10 +58,11 @@
 }
 
 .bank-card-info {
+  font-size: 42px;
+  line-height: 43px;
+  padding: 0 20px 32px 20px;
   display: flex;
-  flex-direction: column;
   gap: .3rem;
-  padding: 2rem 0;
   box-sizing: border-box;
 }
 
@@ -72,27 +71,25 @@
   height: auto;
   position: absolute;
   top: 58px; 
-  right: 15px; /* Отступ от правого края */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  right: 15px; 
 }
 
 .balance-info {
-  font-size: 42px; /* Размер шрифта для баланса */
+  font-size: 42px; 
   font-weight: bold;
-  color: #f5f9fa;
-  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.5);
+  color: #000000;
 }
 
 .card-details {
-  display: flex; /* Используем Flexbox для равномерного распределения элементов */
-  justify-content: space-between; /* Равномерное распределение */
-  margin-top: 30px; /* Отступ сверху для разделения с другими элементами */
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 30px;
 }
 
 .savings-info {
   margin: 25px 0;
   padding: 20px 15px;
-  background-color: #eef5f7;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -128,31 +125,31 @@
 
 @media (max-width: 768px) {
   .debit-card {
-    padding: 15px;
+    padding: 40px 15px;
     width: 100%;
   }
 
   .bank-card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .card-logo {
     width: 100px;
-    top: 10px; /* Поднятый логотип на мобильных */
+    top: 10px;
   }
 
   .card-item {
-    font-size: 22px; /* Уменьшенный размер шрифта для мобильных */
+    font-size: 22px; 
   }
 
   .balance-info {
-    font-size: 28px; /* Уменьшенный размер шрифта для мобильных */
+    font-size: 28px; 
   }
 
   .card-details {
-    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
-    align-items: center; /* Центрирование элементов */
+    flex-direction: column; 
+    align-items: center; 
   }
 }

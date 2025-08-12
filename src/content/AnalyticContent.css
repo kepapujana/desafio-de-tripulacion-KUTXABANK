@@ -23,34 +23,35 @@ h3 {
     color: #d32f2f;
 }
 
+h4 {
+    margin-top: 25px;
+}
+
 .expense-list,
 .risk-description-list {
-    margin: 10px 0; /* Уменьшенные отступы */
-    list-style: none; /* Убираем стандартные маркеры */
-    padding-left: 0; /* Убираем отступ слева */
+    margin: 10px 0; 
+    list-style: none; 
+    padding-left: 0; 
 }
 
 .expense-list li,
 .risk-description-list li {
-    padding: 4px; /* Уменьшенные отступы для элементов списка */
-    color: #333; /* Цвет текста */
-    margin-bottom: 3px; /* Уменьшенный отступ между элементами списка */
+    color: #333; 
 }
 
-/* Удалим фон и границы для списков */
 .expense-list li,
 .risk-description-list li {
-    background: none; /* Убираем фон */
-    border: none; /* Убираем границы */
+    background: none; 
+    border: none;
 }
 
 .alert-box {
     display: flex;
     align-items: center;
     padding: 8px;
-    background-color: #ffebee; /* Светло-красный фон для предупреждения */
+    background-color: #ffebee; 
     color: #b71c1c;
-    border-radius: 4px; /* Закругленные углы */
+    border-radius: 4px;
     margin-top: 15px;
 }
 
@@ -60,7 +61,7 @@ h3 {
 }
 
 .alert-content p {
-    margin: 0; /* Убрать отступы у параграфа */
+    margin: 0;
 }
 
 img {
@@ -68,10 +69,10 @@ img {
     margin: 2rem 0;
 }
 
-/* Адаптивные стили для мобильных устройств */
+
 @media (max-width: 768px) {
     .analytic-content {
-        padding: 10px; /* Уменьшение отступов на мобильных */
+        padding: 10px; 
     }
 
     h2 {
@@ -84,7 +85,7 @@ img {
 
     .alert-box {
         font-size: 14px;
-        padding: 6px; /* Уменьшение отступов */
+        padding: 6px;
     }
 
     .alert-icon {
@@ -94,8 +95,7 @@ img {
     .expense-list li,
     .risk-description-list li {
         font-size: 14px;
-        padding: 4px; /* Уменьшение отступов для элементов списка */
-        margin-bottom: 2px; /* Уменьшение отступа между элементами списка */
+        margin-bottom: 2px; 
     }
 }
 

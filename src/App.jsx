@@ -8,6 +8,7 @@ import Profile from './routes/Profile';
 import Nav from './components/header/Nav';
 import Login from './routes/Login';
 import Menu from '../src/Menu/Menu';
+import '../src/style/index.css';
 
 function App() {
   const [language, setLanguage] = useState('EN');
