@@ -28,7 +28,7 @@ const Login = () => {
             notification.success({ message: 'Éxito', description: '¡Inicio de sesión exitoso!' });
             localStorage.setItem('user', JSON.stringify(formData));
             setTimeout(() => {
-                navigate('/home');
+                navigate('/');
             }, 500);
         } else {
             notification.error({ message: 'Error', description: 'Credenciales incorrectas' });
@@ -64,7 +64,7 @@ const Login = () => {
                 <button className="biometric-button" onClick={() => {
                     notification.success({ message: 'Éxito', description: '¡Inicio de sesión con Face ID exitoso!' });
                     setTimeout(() => {
-                        navigate('/home');
+                        navigate('/');
                     }, 500);
                 }}>
                     Iniciar sesión con Face ID

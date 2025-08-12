@@ -10,14 +10,12 @@ const DebitCard = () => {
   const [newSavingAmount, setNewSavingAmount] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
-  // История пополнений
   const [savingsHistory, setSavingsHistory] = useState([]);
 
   useEffect(() => {
-    // Загрузка данных карты
     const fakeCardData = {
-      cardNumber: '1234 5678 9012 3456         ',
-      cardHolder: 'Irati Murua Arriaga',
+      cardNumber: '· 3456',
+      cardHolder: 'Irati Murua',
       balance: '€54000',
       savingsGoal: '€1000',
       currentSavings: '€54000',
@@ -28,17 +26,14 @@ const DebitCard = () => {
 
   const handleAddSavings = () => {
     if (newSavingAmount && cardData) {
-      // Создаем новую запись в истории пополнений
       const newEntry = {
         id: savingsHistory.length + 1,
         amount: `+€${newSavingAmount}`,
-        date: new Date().toLocaleString('es-ES'), // Дата и время на испанском
+        date: new Date().toLocaleString('es-ES'), 
       };
 
-      // Обновляем историю пополнений
       setSavingsHistory([...savingsHistory, newEntry]);
 
-      // Обновляем текущие накопления без изменения основной карты
       setNewSavingAmount('');
       setIsEditing(false);
     }
@@ -53,31 +48,31 @@ const DebitCard = () => {
   }
 
   return (
+    <>
+    <div className="bank-card-info">
+            <span>
+              <strong>Hola {cardData.cardHolder}</strong>
+            </span>
+    </div>
     <div className="debit-card">
       <div className="card-header">Perfil Financiero</div>
       <div className="card-body">
         <div className="bank-card">
-          <img src={bankLogo} alt="Logo del banco" className="card-logo" />
-          <div className="bank-card-info">
-            <span>
-              <strong>{cardData.cardHolder}</strong>
-            </span>
-            <span>
-              <strong>{cardData.cardNumber}</strong>
-            </span>
-          </div>
           <div className="balance-info">
             <span className="balance-amount">{cardData.balance}</span>
           </div>
         </div>
 
         <div className="savings-info">
+          <h3>
+              <strong>{cardData.cardNumber}</strong>
+          </h3>
           <h4>
-            Objetivo de Ahorro: {cardData.savingsGoal}
+            <b>Objetivo de Ahorro</b>  {cardData.savingsGoal}
             <FontAwesomeIcon
               icon={faPencilAlt}
               onClick={handleEditSavings}
-              style={{ marginLeft: '10px', cursor: 'pointer', color: 'blue' }}
+              style={{ width: '0.8em', marginLeft: '15px', cursor: 'pointer', color: 'black' }}
             />
           </h4>
           <p>Ahorros Actuales: {cardData.currentSavings}</p>
@@ -113,6 +108,7 @@ const DebitCard = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

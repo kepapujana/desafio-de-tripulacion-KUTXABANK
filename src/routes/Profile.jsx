@@ -12,7 +12,6 @@ const UserProfile = () => {
         const userData = JSON.parse(localStorage.getItem('user'));
         if (userData) {
             setUser(userData);
-            // Загрузка данных о накоплениях
             const savedAccounts = JSON.parse(localStorage.getItem('savingsAccounts')) || [];
             setSavingsAccounts(savedAccounts);
         } else {
@@ -24,8 +23,7 @@ const UserProfile = () => {
         <div className="user-profile-container">
             {user ? (
                 <>
-                    <h1>Perfil de Usuario</h1>
-                    <h2>¡Bienvenido, {user.email}!</h2>
+                    <h1>¡Bienvenido Irati!</h1>
                     <div className="user-info">
                         <h3>Tus Ahorros</h3>
                         {savingsAccounts.length > 0 ? (
